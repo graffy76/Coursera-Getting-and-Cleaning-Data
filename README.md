@@ -8,6 +8,8 @@ Save the script data_analysis.R to the folder containing the extracted dataset. 
 
 Execute the script by loading and sourcing it (source 'data_analysis.R').  When complete, the script will display a table view of the resultant dataset.
 
+You can also return the data set in a variable by calling LoadAndMergeData() directly after sourcing run_analysis.R.  (i.e. "result <- LoadAndMergeData()" )
+
 ####Selecting the data
 
 The decision was made at the start to select only those data points which specifically contained the phrase "mean()" or "std()" and not simply "mean".  This delineation was made as in the first case, it was understood that the variable was a driect mean / standard deviation calculation of a series of values.  Several "mean" variables were excluded, namely 'angle' variables containing the following names:
